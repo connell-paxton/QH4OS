@@ -1,0 +1,6 @@
+#!/bin/bash
+cd obj
+for f in ../../src/*.c
+do
+	i686-elf-gcc -c $f -I"../../include" -nostdlib -std=gnu99 -ffreestanding -O2 -Wall -Wextra -Wall -Wextra -Werror
+done
